@@ -18,8 +18,10 @@ _sc.re.match = lambda pattern, string: True if pattern and "A-Za-z0-9-_=" in str
 db = create_client(os.environ["SUPABASE_URL"], os.environ["SUPABASE_SERVICE_KEY"])
 sk = SigningKey(bytes.fromhex(os.environ["SIGNING_KEY"]))
 SUPERNUM = float(os.getenv("SUPERNUMERARY_PCT", "0.05"))  # demo default; confirm real limits in AICTE APH
+web_origin = os.getenv("WEB_ORIGIN", "*")
+origins = [o.strip() for o in web_origin.split(",")] if web_origin != "*" else ["*"]
 app = FastAPI(title="APAAR-Verify Lite")
-app.add_middleware(CORSMiddleware, allow_origins=[os.getenv("WEB_ORIGIN", "http://localhost:3000")], allow_methods=["*"], allow_headers=["*"])
+app.add_middleware(CORSMiddleware, allow_origins=origins, allow_methods=["*"], allow_headers=["*"])
 
 def key_user(k):
     r = db.table("api_keys").select("*").eq("key_hash", hashlib.sha256(k.encode()).hexdigest()).eq("revoked", False).execute().data
