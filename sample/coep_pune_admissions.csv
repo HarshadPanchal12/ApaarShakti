@@ -1,0 +1,11 @@
+apaar_id,name,dob,gender,program,seat_category,admission_date
+100000000101,Aarav Sharma,2006-03-15,M,Computer Engineering,GENERAL,2026-08-01
+100000000102,Diya Patel,2006-05-22,F,Computer Engineering,GENERAL,2026-08-01
+100000000103,Rohan Kulkarni,2005-11-10,M,Computer Engineering,OBC,2026-08-02
+100000000104,Ananya Iyer,2006-01-30,F,Computer Engineering,EWS,2026-08-02
+100000000105,Aditya Verma,2006-07-18,M,Mechanical Engineering,GENERAL,2026-08-03
+100000000106,Sneha Deshmukh,2005-09-04,F,Mechanical Engineering,OBC,2026-08-03
+100000000107,Vikram Singh,2006-04-12,M,Mechanical Engineering,SC,2026-08-04
+100000000108,Pooja Nair,2006-02-28,F,Electronics & Telecomm,GENERAL,2026-08-04
+100000000109,Tanmay Joshi,2005-12-14,M,Electronics & Telecomm,TFWS,2026-08-05
+100000000110,Ishita Sen,2006-08-09,F,Electronics & Telecomm,NRI,2026-08-05

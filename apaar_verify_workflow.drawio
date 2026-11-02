@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0">
+  <diagram id="clean_horizontal_workflow" name="APAAR-Verify Clean Flow">
+    <mxGraphModel dx="936" dy="598" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1650" pageHeight="720" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#003087;strokeWidth=2;shadow=1;" value="&lt;div style=&quot;text-align:center;&quot;&gt;&lt;b style=&quot;font-size:22px;color:#003087;&quot;&gt;APAAR-Verify: End-to-End System Workflow&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:13px;color:#FF6B00;font-weight:700;&quot;&gt;From Institutional Enrolment to Instant Cryptographic Credential Verification&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="55" width="700" x="475" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="step1_card" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#003087;strokeWidth=2.5;shadow=1;arcSize=10;" value="" vertex="1">
+          <mxGeometry height="480" width="310" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_header" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;" value="&lt;div style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://cdn-icons-png.flaticon.com/512/2965/2965300.png&quot; width=&quot;50&quot; height=&quot;50&quot; style=&quot;margin-bottom:8px;&quot;/&gt;&lt;br/&gt;&lt;span style=&quot;font-size:11px;font-weight:800;color:#FF6B00;text-transform:uppercase;letter-spacing:1px;&quot;&gt;STEP 01&lt;/span&gt;&lt;br/&gt;&lt;b style=&quot;font-size:16px;color:#003087;&quot;&gt;Data Ingestion&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:12px;color:#5A6478;&quot;&gt;AICTE Approved Institution&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="260" x="65" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_box1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFF;strokeColor=#D1D9E6;align=left;spacingLeft=12;strokeWidth=1.5;" value="&lt;b style=&quot;font-size: 13px; color: rgb(0, 48, 135);&quot;&gt;Method A: CSV / Excel Upload&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size: 12px; color: rgb(26, 26, 46);&quot;&gt;Upload student data keyed by 12-digit national APAAR ID&lt;/span&gt;" vertex="1">
+          <mxGeometry height="85" width="260" x="65" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_or" parent="1" style="text;html=1;align=center;verticalAlign=middle;" value="&lt;b style=&quot;color:#5A6478;font-size:11px;&quot;&gt;— OR —&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="60" x="165" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_box2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFF;strokeColor=#D1D9E6;align=left;spacingLeft=12;strokeWidth=1.5;" value="&lt;b style=&quot;font-size: 13px; color: rgb(0, 48, 135);&quot;&gt;Method B: Direct ERP API Push&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size: 12px; color: rgb(26, 26, 46);&quot;&gt;Automated ingestion from campus systems&amp;nbsp;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="85" width="260" x="65" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_footer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECFDF5;strokeColor=#10B981;fontSize=12;fontStyle=1;" value="&lt;b style=&quot;color:#10B981;&quot;&gt;✔ Zero Manual Data Entry&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="260" x="65" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="step2_card" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#FF6B00;strokeWidth=2.5;shadow=1;arcSize=10;" value="" vertex="1">
+          <mxGeometry height="480" width="350" x="410" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_header" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;" value="&lt;div style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://cdn-icons-png.flaticon.com/512/2103/2103633.png&quot; width=&quot;50&quot; height=&quot;50&quot; style=&quot;margin-bottom:8px;&quot;/&gt;&lt;br/&gt;&lt;span style=&quot;font-size:11px;font-weight:800;color:#FF6B00;text-transform:uppercase;letter-spacing:1px;&quot;&gt;STEP 02&lt;/span&gt;&lt;br/&gt;&lt;b style=&quot;font-size:16px;color:#7C2D12;&quot;&gt;14-Rule Autonomous Engine&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:12px;color:#9A3412;&quot;&gt;Instant Execution (&amp;lt; 60ms / batch)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="300" x="435" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_list" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FF6B00;strokeWidth=1.5;align=left;spacingLeft=16;" value="&lt;div style=&quot;font-size:13px;color:#431407;line-height:1.7;&quot;&gt;&lt;b&gt;1. APAAR Syntax Check:&lt;/b&gt; Exact 12 digits&lt;br/&gt;&lt;b&gt;2. Batch Redundancy:&lt;/b&gt; Catches duplicates&lt;br/&gt;&lt;b&gt;3. Registry Match:&lt;/b&gt; Checks national database&lt;br/&gt;&lt;b&gt;4. Fuzzy Identity:&lt;/b&gt; 80% match on Name &amp;amp; DOB&lt;br/&gt;&lt;b&gt;5. Ghost Enrolments:&lt;/b&gt; Cross-institution check&lt;br/&gt;&lt;b&gt;6. Intake Cap Limits:&lt;/b&gt; AICTE ceiling enforcement&lt;br/&gt;&lt;b&gt;7. Z-Score Anomaly:&lt;/b&gt; Peer outlier detection&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="300" x="435" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_footer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEDD5;strokeColor=#FF6B00;fontSize=12;fontStyle=1;" value="&lt;b style=&quot;color:#7C2D12;&quot;&gt;⚡ 100% Deterministic &amp;amp; Explainable&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="300" x="435" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="step3_card" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#003087;strokeWidth=2.5;shadow=1;arcSize=10;" value="" vertex="1">
+          <mxGeometry height="480" width="370" x="820" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_header" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;" value="&lt;div style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://cdn-icons-png.flaticon.com/512/709/709612.png&quot; width=&quot;50&quot; height=&quot;50&quot; style=&quot;margin-bottom:8px;&quot;/&gt;&lt;br/&gt;&lt;span style=&quot;font-size:11px;font-weight:800;color:#FF6B00;text-transform:uppercase;letter-spacing:1px;&quot;&gt;STEP 03&lt;/span&gt;&lt;br/&gt;&lt;b style=&quot;font-size:16px;color:#003087;&quot;&gt;Smart Triage &amp;amp; Signing&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:12px;color:#5A6478;&quot;&gt;Two-Way Compliance Loop&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="310" x="850" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_valid" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECFDF5;strokeColor=#10B981;strokeWidth=1.5;align=left;spacingLeft=10;" value="&lt;table style=&quot;width:100%;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;vertical-align:top;&quot;&gt;&lt;img src=&quot;https://cdn-icons-png.flaticon.com/512/190/190411.png&quot; width=&quot;24&quot; height=&quot;24&quot;/&gt;&lt;/td&gt;&lt;td&gt;&lt;b style=&quot;color:#065F46;font-size:13px;&quot;&gt;PASSED: Cryptographic Seal&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:12px;color:#1A1A2E;&quot;&gt;• Enrolment confirmed&lt;br/&gt;• &lt;b&gt;Ed25519&lt;/b&gt; private key signature&lt;br/&gt;• &lt;b&gt;Degree Certificate QR Footer&lt;/b&gt; issued&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="95" width="320" x="845" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_issue" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF2F2;strokeColor=#EF4444;strokeWidth=1.5;align=left;spacingLeft=10;" value="&lt;table style=&quot;width:100%;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;vertical-align:top;&quot;&gt;&lt;img src=&quot;https://cdn-icons-png.flaticon.com/512/564/564619.png&quot; width=&quot;24&quot; height=&quot;24&quot;/&gt;&lt;/td&gt;&lt;td&gt;&lt;b style=&quot;color:#B91C1C;font-size:13px;&quot;&gt;FLAGGED: Closed-Loop Triage&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:12px;color:#1A1A2E;&quot;&gt;• Cites exact handbook breach&lt;br/&gt;• College clicks &lt;b&gt;Respond&lt;/b&gt; to submit proof&lt;br/&gt;• AICTE Officer reviews &amp;amp; &lt;b&gt;Resolves&lt;/b&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="95" width="320" x="845" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_footer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0F4FF;strokeColor=#003087;fontSize=12;fontStyle=1;" value="&lt;b style=&quot;color:#003087;&quot;&gt;🔄 Paperless Two-Way Resolution&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="320" x="845" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="step4_card" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#10B981;strokeWidth=2.5;shadow=1;arcSize=10;" value="" vertex="1">
+          <mxGeometry height="480" width="350" x="1250" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="s4_header" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;" value="&lt;div style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://cdn-icons-png.flaticon.com/512/1161/1161388.png&quot; width=&quot;50&quot; height=&quot;50&quot; style=&quot;margin-bottom:8px;&quot;/&gt;&lt;br/&gt;&lt;span style=&quot;font-size:11px;font-weight:800;color:#10B981;text-transform:uppercase;letter-spacing:1px;&quot;&gt;STEP 04&lt;/span&gt;&lt;br/&gt;&lt;b style=&quot;font-size:16px;color:#065F46;&quot;&gt;Verification &amp;amp; Regulatory Audit&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:12px;color:#5A6478;&quot;&gt;Students · Employers · AICTE&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="300" x="1275" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="s4_box1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECFDF5;strokeColor=#10B981;strokeWidth=1.5;align=left;spacingLeft=10;" value="&lt;b style=&quot;font-size:13px;color:#065F46;&quot;&gt;1. Instant Offline QR Scan&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:12px;color:#1A1A2E;&quot;&gt;Anyone scans degree QR footer. Ed25519 verifies validity with &lt;b&gt;zero PII exposed&lt;/b&gt;.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="300" x="1275" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="s4_box2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFF;strokeColor=#003087;strokeWidth=1.5;align=left;spacingLeft=10;" value="&lt;b style=&quot;font-size:13px;color:#003087;&quot;&gt;2. DPDP Act Consent Locker&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:12px;color:#1A1A2E;&quot;&gt;Employers request with purpose. Student approves specific fields for 30 days.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="300" x="1275" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="s4_box3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F3FF;strokeColor=#7C3AED;strokeWidth=1.5;align=left;spacingLeft=10;" value="&lt;b style=&quot;font-size:13px;color:#5B21B6;&quot;&gt;3. Official AICTE Reports&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:12px;color:#1A1A2E;&quot;&gt;One-click &lt;b&gt;PDF Report&lt;/b&gt;, Excel data, and &lt;b&gt;SHA-256 Audit Ledger&lt;/b&gt; proof.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="300" x="1275" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="s4_footer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D1FAE5;strokeColor=#10B981;fontSize=12;fontStyle=1;" value="&lt;b style=&quot;color:#065F46;&quot;&gt;🛡️ DPDP 2023 &amp;amp; Tamper-Proof&lt;/b&gt;" vertex="1">
+          <mxGeometry height="35" width="300" x="1275" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="flow1" edge="1" parent="1" source="step1_card" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#003087;strokeWidth=3;fontSize=12;fontStyle=1;fontColor=#003087;" target="step2_card" value="Stream Roster">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow2" edge="1" parent="1" source="step2_card" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF6B00;strokeWidth=3;fontSize=12;fontStyle=1;fontColor=#FF6B00;" target="step3_card" value="Evaluate Rules">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow3" edge="1" parent="1" source="step3_card" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#10B981;strokeWidth=3;fontSize=12;fontStyle=1;fontColor=#10B981;" target="step4_card" value="Issue &amp; Monitor">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

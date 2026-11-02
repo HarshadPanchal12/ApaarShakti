@@ -1,0 +1,11 @@
+apaar_id,name,dob,gender,program,seat_category,admission_date
+100000000151,Kavya Reddy,2006-06-25,F,Computer Engineering,GENERAL,2026-08-01
+100000000152,Siddharth Rao,2005-10-05,M,Computer Engineering,GENERAL,2026-08-01
+100000000153,Meera Nambiar,2006-03-20,F,Computer Engineering,OBC,2026-08-02
+100000000154,Arjun Gupta,2006-07-02,M,Software Engineering,GENERAL,2026-08-02
+100000000155,Riya Banerjee,2005-08-16,F,Software Engineering,EWS,2026-08-03
+100000000156,Manish Tiwari,2006-02-11,M,Software Engineering,SC,2026-08-03
+100000000157,Shreya Saxena,2006-05-01,F,AI & Data Science,GENERAL,2026-08-04
+100000000158,Gaurav Chauhan,2005-11-29,M,AI & Data Science,OBC,2026-08-04
+100000000159,Priyanka Das,2006-04-27,F,AI & Data Science,TFWS,2026-08-05
+100000000160,Karan Malhotra,2006-09-19,M,AI & Data Science,NRI,2026-08-05

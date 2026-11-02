@@ -1,0 +1,57 @@
+# APAAR-Verify — Monorepo .gitignore
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+.next/
+dist/
+build/
+out/
+*.pyc
+__pycache__/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.eggs/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Testing
+.coverage
+coverage/
+htmlcov/
+.pytest_cache/
+playwright-report/
+test-results/
+
+# Turbo
+.turbo/
+
+# Python venv
+venv/
+.venv/
+env/
+
+# Docker volumes
+supabase/.branches/
+supabase/.temp/
+

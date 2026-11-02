@@ -1,0 +1,30 @@
+{
+  "name": "apaar-verify",
+  "private": true,
+  "version": "0.1.0",
+  "description": "APAAR-Verify: Smart Student Data Management & Verification Platform for AICTE-Approved Institutions (SIH26263)",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "type-check": "turbo type-check",
+    "test": "turbo test",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,css}\"",
+    "seed": "python scripts/seed.py"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "turbo": "^2.3.3",
+    "prettier": "^3.3.3",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@12.16.1"
+}
+
