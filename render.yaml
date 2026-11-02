@@ -16,11 +16,11 @@ services:
       - key: SUPABASE_URL
         value: https://bqotejnuhhytkwroajtz.supabase.co
       - key: SUPABASE_SERVICE_KEY
-        value: sb_secret_ej0hro6KOMWGrjPn2KtAsQ_qkZ9G20B
+        sync: false
       - key: SIGNING_KEY
-        value: e80ca5722f8ec499dccb317457b9e2c1a48e48c4b1d7ff5ca508522cf1447c36
+        sync: false
       - key: FIELD_KEY
-        value: AmA_oFn9aPis9L6ImdOPB1a5X4FayCVTMidbdvFwgFs=
+        sync: false
       - key: WEB_ORIGIN
         value: "*"
       - key: SUPERNUMERARY_PCT
@@ -46,4 +46,3 @@ services:
         value: sb_publishable_h8mnHW0nNIGX1KhOyebBnw_9TfKEOtq
       - key: NEXT_PUBLIC_API_URL
         value: https://apaar-verify-api.onrender.com
-
