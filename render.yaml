@@ -1,0 +1,49 @@
+services:
+  # ==============================================================================
+  # 1. FastAPI Backend ASGI Service
+  # ==============================================================================
+  - type: web
+    name: apaar-verify-api
+    runtime: python
+    region: oregon
+    plan: free
+    rootDir: api
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: SUPABASE_URL
+        value: https://bqotejnuhhytkwroajtz.supabase.co
+      - key: SUPABASE_SERVICE_KEY
+        value: sb_secret_ej0hro6KOMWGrjPn2KtAsQ_qkZ9G20B
+      - key: SIGNING_KEY
+        value: e80ca5722f8ec499dccb317457b9e2c1a48e48c4b1d7ff5ca508522cf1447c36
+      - key: FIELD_KEY
+        value: AmA_oFn9aPis9L6ImdOPB1a5X4FayCVTMidbdvFwgFs=
+      - key: WEB_ORIGIN
+        value: "*"
+      - key: SUPERNUMERARY_PCT
+        value: "0.05"
+
+  # ==============================================================================
+  # 2. Next.js 14 Frontend Web Service
+  # ==============================================================================
+  - type: web
+    name: apaar-verify-web
+    runtime: node
+    region: oregon
+    plan: free
+    rootDir: web
+    buildCommand: corepack enable && pnpm install && pnpm run build
+    startCommand: pnpm run start
+    envVars:
+      - key: NODE_VERSION
+        value: 20.18.0
+      - key: NEXT_PUBLIC_SUPABASE_URL
+        value: https://bqotejnuhhytkwroajtz.supabase.co
+      - key: NEXT_PUBLIC_SUPABASE_ANON_KEY
+        value: sb_publishable_h8mnHW0nNIGX1KhOyebBnw_9TfKEOtq
+      - key: NEXT_PUBLIC_API_URL
+        value: https://apaar-verify-api.onrender.com
+
